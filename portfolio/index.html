@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>portfolio website</title>
+    <link rel="stylesheet" href="style.css">
+    <script sr="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="images/user.jpg"class="user">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fas fa-times" onclick="closemenu()"></i>
+            </ul>
+            <i class=" fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>Python developer</p>
+            <h1>Hii hello, I'm Usha</h1>
+        </div>
+    </div>
+
+</div>
+<div id="About">
+    <div class="container">
+        <div class ="row">
+            <div class="About-col-1">
+                <img src="images/user.jpg">
+
+            </div>
+            <div class="About-col-2">
+                <h1 class="sub-title">About me</h1>
+                <p>Python is a programming language that is widely used in web applications, software development, data science, and machine learning (ML). Developers use Python because it is efficient and easy to learn and can run on many different platforms.</p>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                    
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Python</span><br>Designing web/app interface</li>
+                        <li><span>Web development</span><br>Web/app interface</li>
+                        <li><span>App development</span><br>Ios apps</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>2021 - current</span><br>python institute</li>
+                        <li><span>2019 - 2021</span><br>Team lead</li>
+                        <li><span>2016 - 2019</span><br>Internship</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2016</span><br>python training</li>
+                        <li><span>2016</span><br>M.tech</li>
+                        <li><span>2014</span><br>B.tech</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!---------------services--------------->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fas fa-code"></i>
+                <h2>web design</h2>
+                <p>Web Design mainly focuses on the look and feel of the website which includes color scheme, graphic design and creating SEO friendly websites whereas Web Development is the art of converting the design into code and implementing the functonalities of the website</p>
+                <a href="#">learn more</a>
+            </div>
+            <div>
+                <i class="fas fa-crop-alt"></i>
+
+                <h2>UI/UX Design</h2>
+                <p>UI/UX design is a combination of two design disciplines: user experience design (UX) and user interface design (UI). Together, UX and UI make up the process that goes into designing digital products such as apps, websites, and software. Despite comprising two separate disciplines, UX and UI are often referred to as one.</p>
+                <a href="#">learn more</a>
+            </div>
+            <div>
+                <i class="fas fa-app-store"></i>
+                <h2>App design</h2>
+                <p>Mobile application design commonly refers to the external interface of the mobile solution that users interact with. However, app design isn't just a mere line-up of pretty visuals, buttons, and other user interface elements. The overriding objective of mobile design is to make the product both easy to use and aesthetically pleasing.</p>
+                <a href="#">learn more</a>
+            </div>
+            
+        </div>
+
+    </div>
+</div>
+<!-----------------------------portfolio------------>
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class ="work-list">
+            <div class="work">
+                <img src="images/work1.jpg">
+                <div class="layer">
+                    <h3>social  media app</h3>
+                    <p>the app contents you to the talent people around the world</p>
+                    <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work2.jpeg">
+                <div class="layer">
+                    <h3>online shoping app</h3>
+                    <p>the app contents you to the talent people around the world</p>
+                    <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work3.jpg">
+                <div class="layer">
+                    <h3>mobile app</h3>
+                    <p>the app contents you to the talent people around the world</p>
+                    <a href="#"><i class="fas fa-external-link-alt"></i></a>
+            </div>
+           
+        </div>
+
+    </div>
+    <a href="#" class="btn">see more</a>
+</div>
+<!-----------------------contact------>
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">contact me</h1>
+                <p>contact@example.com</p>
+                <p>0123456789</p>
+                <div class="social-icons">
+                    <a href="https://faceboook.com/"><i class="fab fa-faceboook"></i></a>
+                    <a href=""><i class="fab fa-twitter-square"></i></a>
+                    <a href=""><i class="fab fa-instagram"></i></a>
+                    <a href=""><i class="fab fa-linkedin"></i></a>
+                </div>
+                <a href="images/images.jpeg" download class="btn btn2"> Download cv</a>
+            </div>
+            <div class="coontact-right">
+                <form>
+                    <input type="text" name="Name" placeholder="Your name" required>
+                    <input type="email" name="email" placeholder="Your email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>copyright @ usha. made with by easy tutorials</p>
+    </div>
+
+</div>
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+
+    }
+</script>
+<script>
+    var sidemenu = document.getElementById("sidemenu");
+    function openmenu(){
+        sidemenu.style.right="0";
+    }
+    function closemenu(){
+        sidemenu.style.right="-200px";
+    }
+
+</script>
+     
+</body>
+</html>
